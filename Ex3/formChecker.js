@@ -10,19 +10,21 @@ function checkItems () {
     let ship2=document.getElementById("ship2").checked
     let ship3=document.getElementById("ship3").checked
 
-    if(broomNum=="" || caulNum=="" || bookNum=="" )
-    {
-        alert("Empty fields not allowed. Enter 0 if you do not wish to purchase.");
-   	//event.preventDefault();
-     }
     if(userName=="" || pw=="")
     {
 	alert("You must enter both username and password.");
-	//event.preventDefault();
+	event.preventDefault();
     }
-    if(ship1==false && ship2==false && ship3==false)
+
+    else if(broomNum=="" || caulNum=="" || bookNum=="" )
+    {
+        alert("Empty fields not allowed. Enter 0 if you do not wish to purchase.");
+   	event.preventDefault();
+     }
+    else if(ship1==false && ship2==false && ship3==false)
     {
 	alert("You must choose a shipping method.");
+	event.preventDefault();
     }   
     else
     {
