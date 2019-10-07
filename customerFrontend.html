@@ -1,0 +1,45 @@
+<!--
+Anissa Khan
+EECS448 Lab4 Ex3
+10/5/19
+
+file name: customerFrontend.html
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+	<title>The Witch's Shop</title>
+
+	<link href="style.css"
+            rel="stylesheet"
+            type="text/css"/>
+    </head>
+<body>
+
+    <strong class="headerText">The Witch's Shop</strong><br><br>
+
+    <form action="customerBackend.php" method="post">
+       <div id="frontendtext">
+		<strong>Username:</strong> <input type="text" name="name" id="name">
+        	<strong>Password:</strong> <input type="text" name="password" id="pw"><br><br>
+		<strong># Witch's Brooms ($50 each):</strong><input type="text" name="item1" id="item1"><br>
+		<strong># Witch's Premier Cauldron ($75 each):</strong><input type="text" name="item2" id="item2"><br>
+		<strong># Sanderson Sisters' Spell Book ($300 each):</strong><input type="text" name="item3" id="item3"><br><br>
+		<strong>Shipping:</strong><input type="radio" name="ship" value="7 Day" id="ship1">7 day (free)
+		<input type="radio" name="ship" value="Overnight" id="ship2">Overnight ($50.00)
+		<input type="radio" name="ship" value="3 Day" id="ship3">3 Day ($5.00)
+	</div>
+        <div class="photos"><input type="submit" name="submit" value="Checkout" onclick="checkItems()"></div><br>
+	<div class="photos"><input type="reset" name="reset" value="Reset"></div><br><br>
+	<div class="photos">
+		<img src="broom.jpg" height="30%" width="20%" >
+		<img src="spellbook.jpg" height="30%" width="20%" >
+		<img src="cauldron.jpg" height="30%" width="20%" >	
+	</div>
+    </form>
+
+	<script src="formChecker.js"></script>
+</body>
+</html> 

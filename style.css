@@ -1,0 +1,49 @@
+body {
+  /* background-color: rgb(75, 57, 75);*/        
+
+background-image: url(https://i.pinimg.com/originals/91/e4/05/91e4054f2adc55da0a59fb30324eff2d.jpg);
+background-size: 100%;
+   background-attachment: fixed;*/
+}
+
+.headerText {
+     display: block;
+     text-align: center;
+     font-size: 34pt;
+     color: rgb(71, 5, 71);
+     background-color: rgb(145, 142, 100);
+            }
+
+#frontendtext{
+display: block;
+text-align: center;
+font-size: 12pt;
+color: rgb(71, 5, 71);
+background-color: rgb(145, 142, 100);
+}
+
+#backendtext{
+display: block;
+text-align: center;
+font-size: 20pt;
+color: rgb(71, 5, 71);
+background-color: rgb(145, 142, 100);
+}
+
+
+img {
+display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photos{
+text-align: center;
+}
+
+table, th, td {
+border: 1px solid black;
+font-size: 20pt;
+color: rgb(71, 5, 71);
+background-color: rgb(145, 142, 100);
+}
