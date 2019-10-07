@@ -15,12 +15,16 @@ function checkItems () {
 	alert("You must enter both username and password.");
 	event.preventDefault();
     }
-
     else if(broomNum=="" || caulNum=="" || bookNum=="" )
     {
         alert("Empty fields not allowed. Enter 0 if you do not wish to purchase.");
    	event.preventDefault();
-     }
+    }
+    else if(broomNum<0 || caulNum<0 || bookNum<0 || isNaN(broomNum) || isNaN(caulNum) || isNaN(bookNum))
+    {
+	alert("Invalid input: must be numbers greater than or equal to 0");
+	event.preventDefault();
+    }
     else if(ship1==false && ship2==false && ship3==false)
     {
 	alert("You must choose a shipping method.");
@@ -32,15 +36,6 @@ function checkItems () {
     }
 }
 
-function checkuserPW() {
-	let userName=document.getElementById("name").value
-	let pw=document.getElementById("pw").value
-	
-	if(userName=="" || pw=="")
-	{   
-        alert("You must enter both username and password.");
-	}
-}
 
 function returnToPreviousPage(){
 	window.history.back();
